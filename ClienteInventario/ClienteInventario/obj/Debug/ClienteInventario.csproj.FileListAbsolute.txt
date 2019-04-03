@@ -1,0 +1,10 @@
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\bin\Debug\ClienteInventario.exe.config
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\bin\Debug\ClienteInventario.exe
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\bin\Debug\ClienteInventario.pdb
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.csprojAssemblyReference.cache
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.Form1.resources
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.Properties.Resources.resources
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.csproj.GenerateResource.cache
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.csproj.CoreCompileInputs.cache
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.exe
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ClienteInventario\ClienteInventario\obj\Debug\ClienteInventario.pdb

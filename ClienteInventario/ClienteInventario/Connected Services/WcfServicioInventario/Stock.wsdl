@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Stock" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59518/Stock.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59518/Stock.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59518/Stock.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServicioInventario.Modelo" />
+      <xsd:import schemaLocation="http://localhost:59518/Stock.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ServicioInventario.ViewModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStock_MostrarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IStock_MostrarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_CrearProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearProducto" />
+  </wsdl:message>
+  <wsdl:message name="IStock_CrearProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EditarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EditarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_DetalleProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleProducto" />
+  </wsdl:message>
+  <wsdl:message name="IStock_DetalleProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EliminarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EliminarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_MostrarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IStock_MostrarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_CrearCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IStock_CrearCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EditarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EditarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_DetalleCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IStock_DetalleCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EliminarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IStock_EliminarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStock_MostrarInventario_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarInventario" />
+  </wsdl:message>
+  <wsdl:message name="IStock_MostrarInventario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostrarInventarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStock">
+    <wsdl:operation name="MostrarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/MostrarProductos" message="tns:IStock_MostrarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/MostrarProductosResponse" message="tns:IStock_MostrarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/CrearProducto" message="tns:IStock_CrearProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/CrearProductoResponse" message="tns:IStock_CrearProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/EditarProducto" message="tns:IStock_EditarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/EditarProductoResponse" message="tns:IStock_EditarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/DetalleProducto" message="tns:IStock_DetalleProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/DetalleProductoResponse" message="tns:IStock_DetalleProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/EliminarProducto" message="tns:IStock_EliminarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/EliminarProductoResponse" message="tns:IStock_EliminarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/MostrarCategoria" message="tns:IStock_MostrarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/MostrarCategoriaResponse" message="tns:IStock_MostrarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/CrearCategoria" message="tns:IStock_CrearCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/CrearCategoriaResponse" message="tns:IStock_CrearCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/EditarCategoria" message="tns:IStock_EditarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/EditarCategoriaResponse" message="tns:IStock_EditarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/DetalleCategoria" message="tns:IStock_DetalleCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/DetalleCategoriaResponse" message="tns:IStock_DetalleCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/EliminarCategoria" message="tns:IStock_EliminarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/EliminarCategoriaResponse" message="tns:IStock_EliminarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarInventario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStock/MostrarInventario" message="tns:IStock_MostrarInventario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStock/MostrarInventarioResponse" message="tns:IStock_MostrarInventario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IStock" type="tns:IStock">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MostrarProductos">
+      <soap:operation soapAction="http://tempuri.org/IStock/MostrarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearProducto">
+      <soap:operation soapAction="http://tempuri.org/IStock/CrearProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarProducto">
+      <soap:operation soapAction="http://tempuri.org/IStock/EditarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetalleProducto">
+      <soap:operation soapAction="http://tempuri.org/IStock/DetalleProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProducto">
+      <soap:operation soapAction="http://tempuri.org/IStock/EliminarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IStock/MostrarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCategoria">
+      <soap:operation soapAction="http://tempuri.org/IStock/CrearCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IStock/EditarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetalleCategoria">
+      <soap:operation soapAction="http://tempuri.org/IStock/DetalleCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IStock/EliminarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarInventario">
+      <soap:operation soapAction="http://tempuri.org/IStock/MostrarInventario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Stock">
+    <wsdl:port name="BasicHttpBinding_IStock" binding="tns:BasicHttpBinding_IStock">
+      <soap:address location="http://localhost:59518/Stock.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

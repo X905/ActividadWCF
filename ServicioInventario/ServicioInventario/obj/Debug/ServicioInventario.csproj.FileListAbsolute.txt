@@ -1,0 +1,12 @@
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\ServicioInventario.dll.config
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\ServicioInventario.dll
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\ServicioInventario.pdb
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\EntityFramework.dll
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\EntityFramework.SqlServer.dll
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\EntityFramework.xml
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\bin\EntityFramework.SqlServer.xml
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\obj\Debug\ServicioInventario.csprojAssemblyReference.cache
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\obj\Debug\ServicioInventario.csproj.CoreCompileInputs.cache
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\obj\Debug\ServicioInventario.csproj.CopyComplete
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\obj\Debug\ServicioInventario.dll
+C:\Users\CDS3UNIVO3\source\Angel Castillo Act2\ServicioInventario\ServicioInventario\obj\Debug\ServicioInventario.pdb
